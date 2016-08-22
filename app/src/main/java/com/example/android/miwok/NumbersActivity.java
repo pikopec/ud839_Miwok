@@ -8,6 +8,9 @@ public class NumbersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("new title");
         setContentView(R.layout.activity_numbers);
+        setTitle("new title");
+
     }
 }
