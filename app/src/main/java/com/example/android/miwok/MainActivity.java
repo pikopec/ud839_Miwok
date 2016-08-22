@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openNumbersList(View v){
-        Intent i = new Intent(this, ColorsActivity.class);
+        Intent i = new Intent(this, NumbersActivity.class);
         startActivity(i);
     }
 }
