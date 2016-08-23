@@ -32,14 +32,70 @@ public class MainActivity extends AppCompatActivity {
 
         // Find the View that shows the numbers category
         TextView numbers = (TextView)findViewById(R.id.numbers);
+        TextView colors = (TextView)findViewById(R.id.colors);
+        TextView family = (TextView)findViewById(R.id.family);
+        TextView phrases = (TextView)findViewById(R.id.phrases);
 
         // Set a clicklistener on that View
-        numbers.setOnClickListener(new NumbersClickListener());
+        numbers.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+                //Create a new intent to open the {@link NumbersActivity}
+                Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
+
+                //Start the new activity
+                startActivity(numbersIntent);
+            }
+
+        });
+
+
+        // Set a clicklistener on that View
+        colors.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+                //Create a new intent to open the {@link ColorsActivity}
+                Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
+
+                //Start the new activity
+                startActivity(colorsIntent);
+            }
+
+        });
+
+        // Set a clicklistener on that View
+        family.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+                //Create a new intent to open the {@link FamilyActivity}
+                Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
+
+                //Start the new activity
+                startActivity(familyIntent);
+            }
+
+        });
+
+        // Set a clicklistener on that View
+        phrases.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+                //Create a new intent to open the {@link PhrasesActivity}
+                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
+
+                //Start the new activity
+                startActivity(phrasesIntent);
+            }
+
+        });
+
+
 
     }
 
-    public void openNumbersList(View v){
-        Intent i = new Intent(this, NumbersActivity.class);
-        startActivity(i);
-    }
+
 }
