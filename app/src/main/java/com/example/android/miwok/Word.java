@@ -7,7 +7,7 @@ package com.example.android.miwok;
 public class Word {
     private String mEnglishTranslation;
     private String mMiwokTranslation;
-    private int mImageIdResource;
+    private int mImageResourceId;
 
     public Word(String english, String miwok){
         mEnglishTranslation = english;
@@ -17,7 +17,7 @@ public class Word {
     public Word(String english, String miwok, int imageIdResource){
         mEnglishTranslation = english;
         mMiwokTranslation = miwok;
-        mImageIdResource = imageIdResource;
+        mImageResourceId = imageIdResource;
     }
     public String getEnglishTranslation(){
         return mEnglishTranslation;
@@ -27,5 +27,5 @@ public class Word {
         return mMiwokTranslation;
     }
 
-    public int getImageIdResource() { return mImageIdResource; }
+    public int getImageResourceId() { return mImageResourceId; }
 }
