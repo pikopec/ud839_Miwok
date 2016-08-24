@@ -9,10 +9,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="lutti" />
+        tools:text="lutti"
+        android:id="@+id/miwok_translation"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="one" />
+        tools:text="one"
+        android:id="@+id/english_translation"/>
 </LinearLayout>
