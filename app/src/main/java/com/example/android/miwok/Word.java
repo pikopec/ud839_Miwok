@@ -8,6 +8,7 @@ public class Word {
     private String mEnglishTranslation;
     private String mMiwokTranslation;
     private int mImageResourceId = NO_IMAGE_PROVIDED;
+    private int mAudioResourceId;
     private static final int NO_IMAGE_PROVIDED = -1;
 
     public Word(String english, String miwok){
@@ -15,10 +16,11 @@ public class Word {
         mMiwokTranslation = miwok;
     }
 
-    public Word(String english, String miwok, int imageIdResource){
+    public Word(String english, String miwok, int imageIdResource, int audioResourceId){
         mEnglishTranslation = english;
         mMiwokTranslation = miwok;
         mImageResourceId = imageIdResource;
+        mAudioResourceId = audioResourceId;
     }
     public String getEnglishTranslation(){
         return mEnglishTranslation;
@@ -29,6 +31,8 @@ public class Word {
     }
 
     public int getImageResourceId() { return mImageResourceId; }
+
+    public int getAudioResourceId() { return mAudioResourceId; }
 
     public boolean hasImage(){ return mImageResourceId != NO_IMAGE_PROVIDED; }
 
